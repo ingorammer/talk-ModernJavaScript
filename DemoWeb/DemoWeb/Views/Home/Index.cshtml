@@ -1,0 +1,17 @@
+﻿@model dynamic
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Demos</title>
+    </head>
+    <body>
+        <div>
+            <h1>Demos</h1>
+            @foreach (string demo in ViewBag.Demos)
+            {
+                <a href="?demo=@demo">@demo</a><br/>
+            }
+        </div>
+    </body>
+</html>
